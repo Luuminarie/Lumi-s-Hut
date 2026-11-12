@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4f0">
+    <meta name="description" content="Lumi is a developer in Perth who enjoys building simple, useful things.">
+    <title>Lumi — little corner of the internet</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="desktop" aria-label="Lumi's interactive portfolio desktop">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Lumi's desktop home">
+          <span class="brand-mark" aria-hidden="true">l.</span>
+          <span>Lumi's corner</span>
+        </a>
+        <div class="topbar-right">
+          <span class="location"><span class="status-dot" aria-hidden="true"></span> Perth, Australia</span>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.2A8.8 8.8 0 0 1 8.8 3.8 8.8 8.8 0 1 0 20.2 15.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="theme-label">Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="desktop-area" aria-label="Desktop">
+        <div class="desktop-note" aria-hidden="true">
+          <span class="note-eyebrow">A LITTLE PLACE ON THE INTERNET</span>
+          <span class="note-heading">Make yourself<br>a little at home.</span>
+          <span class="note-hint">Pick an icon to have a look around <span>↘</span></span>
+        </div>
+
+        <div class="wave-scene" aria-hidden="true">
+          <svg class="wave wave-back" viewBox="0 0 2880 400" preserveAspectRatio="none">
+            <path d="M0 180C180 90 360 270 540 180S900 270 1080 180 1260 90 1440 180 1620 270 1800 180 2160 270 2340 180 2700 90 2880 180V400H0Z"/>
+          </svg>
+          <svg class="wave wave-mid" viewBox="0 0 2880 400" preserveAspectRatio="none">
+            <path d="M0 220C180 310 360 130 540 220S900 130 1080 220 1260 310 1440 220 1620 130 1800 220 2160 130 2340 220 2700 310 2880 220V400H0Z"/>
+          </svg>
+          <svg class="wave wave-front" viewBox="0 0 2880 400" preserveAspectRatio="none">
+            <path d="M0 270C180 190 360 350 540 270S900 350 1080 270 1260 190 1440 270 1620 350 1800 270 2160 350 2340 270 2700 190 2880 270V400H0Z"/>
+          </svg>
+        </div>
+
+        <section class="window is-active" id="window-about" aria-labelledby="about-title" data-window="about">
+          <div class="window-bar">
+            <div class="window-controls">
+              <button class="window-control close-control" type="button" aria-label="Close About window" data-action="close"><span></span></button>
+              <button class="window-control minimize-control" type="button" aria-label="Minimize About window" data-action="minimize"><span></span></button>
+              <button class="window-control maximize-control" type="button" aria-label="Maximize About window" data-action="maximize"><span></span></button>
+            </div>
+            <span class="window-title"><span class="title-emoji" aria-hidden="true">✳</span> about-me.txt</span>
+            <span class="bar-spacer" aria-hidden="true"></span>
+          </div>
+          <div class="window-body about-body">
+            <div class="window-kicker"><span class="status-dot" aria-hidden="true"></span> A LITTLE INTRODUCTION</div>
+            <h1 id="about-title">Hi there, I’m Lumi <span class="wave-hello" aria-hidden="true">👋</span></h1>
+            <p class="about-lead">A developer based in Perth, Australia.</p>
+            <p>I develop things. If I can think it, I’ll try to build it.</p>
+            <p>I like making things that are <span class="highlight">simple, useful, and easy to understand.</span></p>
+            <div class="window-divider"></div>
+            <div class="about-bottom">
+              <div><span class="mini-label">CURRENTLY LEARNING</span><div class="tag-list"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">React</span></div></div>
+              <button class="text-link" type="button" data-open="projects">A little more about me <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div class="window-resize-hint" aria-hidden="true"></div>
+        </section>
+
+        <div class="window-layer" id="window-layer" aria-live="polite"></div>
+      </section>
+
+      <footer class="dock-area">
+        <nav class="dock" aria-label="Open a window">
+          <button class="dock-app is-selected" type="button" data-open="about" aria-label="Open About" aria-pressed="true" title="About"><span class="dock-icon icon-about" aria-hidden="true">✳</span><span class="dock-tooltip">About</span></button>
+          <button class="dock-app" type="button" data-open="projects" aria-label="Open Now & learning" aria-pressed="false" title="Now & learning"><span class="dock-icon icon-projects" aria-hidden="true">⌘</span><span class="dock-tooltip">Now & learning</span></button>
+          <button class="dock-app" type="button" data-open="fun" aria-label="Open Fun facts" aria-pressed="false" title="Fun facts"><span class="dock-icon icon-fun" aria-hidden="true">♡</span><span class="dock-tooltip">Fun facts</span></button>
+          <span class="dock-separator" aria-hidden="true"></span>
+          <button class="dock-app" type="button" data-open="contact" aria-label="Open Find me" aria-pressed="false" title="Find me"><span class="dock-icon icon-contact" aria-hidden="true">↗</span><span class="dock-tooltip">Find me</span></button>
+        </nav>
+        <span class="dock-caption">A small desktop, just for you <span aria-hidden="true">✳</span></span>
+      </footer>
+    </main>
+  </body>
+</html>
